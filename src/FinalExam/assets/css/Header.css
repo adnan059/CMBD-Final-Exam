@@ -1,0 +1,26 @@
+header {
+  background-color: var(--orange);
+  padding: 2.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+header .logo {
+  color: white;
+  font-size: var(--navFS);
+  font-weight: 700;
+  font-family: var(--headerFF);
+}
+
+header a {
+  font-size: var(--navFS);
+  color: white;
+  font-weight: 700;
+  font-family: var(--headerFF);
+}

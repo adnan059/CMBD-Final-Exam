@@ -1,0 +1,29 @@
+footer {
+  background-color: var(--orange);
+  text-align: center;
+  padding: 1.5rem;
+  /* position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000; */
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+footer a {
+  display: inline-block;
+  transition: var(--trans);
+}
+
+footer a:hover {
+  color: yellow;
+}
+
+footer p i {
+  margin-right: 0.8rem;
+}

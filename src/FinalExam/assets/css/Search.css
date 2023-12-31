@@ -1,0 +1,72 @@
+.searchPage {
+  min-height: 80vh;
+}
+.searchResContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cardGap);
+  flex-wrap: wrap;
+}
+.searchResContainer a {
+  background-color: var(--cardBg);
+  padding: var(--cardPadding);
+  border: var(--cardBorder);
+  border-radius: var(--borderRadius1);
+  transition: var(--trans);
+}
+.searchResContainer a:hover {
+  transform: scale(1.02);
+}
+
+.searchResContainer a > img {
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--borderRadius1);
+}
+
+.searchResContainer a p {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: var(--bodyFS);
+  font-weight: 600;
+  color: var(--orange);
+  font-family: var(--headerFF);
+  text-transform: capitalize;
+}
+
+.searchResContainer a .resContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.searchResContainer a .resContent span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--bodyTextColor);
+  font-size: var(--bodyFS2);
+  text-transform: capitalize;
+}
+
+.searchResContainer a .resContent img {
+  display: inline-block;
+}
+
+.emptyList {
+  text-align: center;
+  margin-top: 10rem;
+  color: red;
+  font-weight: 700;
+  text-transform: capitalize;
+  height: 80vh;
+}
+
+@media (max-width: 370px) {
+  .searchResContainer a > img {
+    max-width: 100%;
+  }
+}

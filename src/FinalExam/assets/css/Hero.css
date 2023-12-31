@@ -1,0 +1,85 @@
+.hero {
+  padding-top: 9rem;
+  height: 30rem;
+  background: url("../images/heroBanner.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-inline: 2rem;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.hero .heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.hero .heroContainer .searchInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.hero .heroContainer .searchInputContainer input {
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.hero .heroContainer .searchInputContainer input:focus {
+  border: 2px solid var(--orange);
+}
+
+.hero .heroContainer .searchInputContainer button {
+  color: white;
+  background-color: var(--orange);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--trans);
+}
+
+.hero .heroContainer .searchInputContainer button:hover {
+  transform: scale(1.05);
+}
+
+.hero .heroContainer h1 {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Salsa", cursive;
+  font-weight: 500;
+}
+
+@media (max-width: 695px) {
+  .hero .heroContainer .searchInputContainer input {
+    width: 80%;
+  }
+}
